@@ -50,6 +50,13 @@ header{
   padding: 2em 2em;
 }
 
+.yo{
+  display: flex;
+}
+
+.yo sup{
+  font-style: italic;
+}
 .icons svg{
     transition: transform 350ms;
 }
@@ -73,13 +80,20 @@ header{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 25px;
   flex-wrap: wrap;
 }
 
 .icons > svg{
   width: 75px;
+  margin: 10px;
 }
+
+.bio-options{
+  display: flex;
+  justify-content: space-around;
+  row-gap: 15px;
+}
+
 
 
 h1{
