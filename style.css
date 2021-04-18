@@ -1,32 +1,30 @@
 
 body{
-    margin: auto;
-    margin-top: min(3vw, 35px);
-    /* height: 100vh; */
-    width: min(1350px, 95vw);
-    color: rgb(19, 17, 17);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    font-family: 'Brygada 1918', serif;
+  margin: auto;
+  margin-top: min(3vw, 35px);
+  width: min(1350px, 95vw);
+  color: rgb(19, 17, 17);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: 'Brygada 1918', serif;
 }
 
 header{
-    width: 100%;
-    border-bottom: 1px solid rgba(19,17,17, 0.329);
-    padding-bottom: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 100%;
+  border-bottom: 1px solid rgba(19,17,17, 0.329);
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .splash-image{
   width: min(1000px, 85vw);
-  height: min(800px, 60vh);
+  height: 40vh;
   border-left: 1px solid rgba(19,17,17, 0.329);
   border-right: 1px solid rgba(19,17,17, 0.329);
-
 }
 
 .skills-bio{
@@ -62,7 +60,6 @@ header{
 .portfolio-item img{
   width: 100%;
   cursor: pointer;
-
 }
 
 .portfolio-item img:hover{
@@ -106,8 +103,6 @@ header{
   border-right: 1px solid rgba(19,17,17, 0.20);
 }
 
-
-
 #fifth{
 
 }
@@ -149,6 +144,7 @@ header{
 .icons > svg{
   width: 60px;
   margin: 7px;
+  margin-top: 15px;
 }
 
 .tabs-list{
@@ -160,8 +156,8 @@ header{
 
 
 h1{
-    font-family: 'La Belle Aurore', cursive;
-    font-size: 35px;
+  font-family: 'La Belle Aurore', cursive;
+  font-size: 35px;
 }
 
 h2{
@@ -175,23 +171,23 @@ h3{
 }
 
 .page-title{
-    width: 350px;
-    height:fit-content;
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-
+  width: 350px;
+  height:fit-content;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 }
+
 b{
   font-style: italic;
   font-weight: 500;
   color: rgb(255, 0, 55);  
 }
 sub{
-    font-family: 'Brygada 1918', serif;
-    font-size: 15px;
-    letter-spacing: 2px;
-    text-align: right;
+  font-family: 'Brygada 1918', serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-align: right;
 }
 
 /* Hamburger Menu */
@@ -208,14 +204,14 @@ input {
   position: relative;
 }
 .open{
-    top: 8px;
-    cursor: pointer;
+  top: 8px;
+  cursor: pointer;
 }
 
 .open:before, .open:after{
-    content: "";
-    transform: rotate(0deg);
-    transition: all 0.3s ease;
+  content: "";
+  transform: rotate(0deg);
+  transition: all 0.3s ease;
 }
 
 .open:before {
