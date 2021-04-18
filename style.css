@@ -29,11 +29,54 @@ header{
 
 }
 
-.skills-container, .bio{
-  width: 100%;
-  border-top: 1px solid rgba(19,17,17, 0.329);
-  padding: 25px;
+.skills-bio{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
+.skills-container, .bio, .portfolio-section{
+  width: 100%;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(19,17,17, 0.329);
+  padding: 15px;
+}
+
+.portfolio{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.portfolio-item{
+  width: 375px;
+  margin: 0px 15px 20px 15px;
+}
+.item-header{
+  display: flex; 
+  align-items: center;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.portfolio-item img{
+  width: 100%;
+  cursor: pointer;
+
+}
+
+.portfolio-item img:hover{
+  transform: scale(1.02);
+  transition: transform 350ms;
+}
+
+.bio p{
+  margin: 0 auto;
+  width: 70%;
+  font-size: 18px;
+  font-weight: 70;
+  margin-bottom: 1.25em;
+  text-align: center;
 }
 
 .skills{
@@ -43,11 +86,30 @@ header{
   justify-content: center;
 }
 
+
 .skills > div{
-  margin: 20px;
-  background: rgba(128, 128, 128, 0.05);
-  border: 1px solid rgba(19,17,17, 0.1);
-  padding: 2em 2em;
+  padding: 1.05em 1.05em;
+}
+
+#first, #second{
+  border-bottom: 1px solid rgba(19, 17, 17, 0.20);
+  border-right: 1px solid rgba(19,17,17, 0.20);
+
+}
+
+#third{
+  border-bottom: 1px solid rgba(19,17,17, 0.20);
+  margin-right: 1px;
+}
+
+#fourth{
+  border-right: 1px solid rgba(19,17,17, 0.20);
+}
+
+
+
+#fifth{
+
 }
 
 .yo{
@@ -58,7 +120,8 @@ header{
   font-style: italic;
 }
 .icons svg{
-    transition: transform 350ms;
+  transition: transform 350ms;
+  cursor: pointer;
 }
 .icons svg:hover {
   transform: scale(1.1);
@@ -84,11 +147,11 @@ header{
 }
 
 .icons > svg{
-  width: 75px;
-  margin: 10px;
+  width: 60px;
+  margin: 7px;
 }
 
-.bio-options{
+.tabs-list{
   display: flex;
   justify-content: space-around;
   row-gap: 15px;
@@ -103,13 +166,12 @@ h1{
 
 h2{
   font-size: 35px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 h3{
   font-size: 20px;
-  margin-bottom: 15px;
-
+  margin-right: 15px;
 }
 
 .page-title{
@@ -120,7 +182,11 @@ h3{
     flex-wrap: wrap;
 
 }
-
+b{
+  font-style: italic;
+  font-weight: 500;
+  color: rgb(255, 0, 55);  
+}
 sub{
     font-family: 'Brygada 1918', serif;
     font-size: 15px;
@@ -277,3 +343,4 @@ input {
 #menuToggle:not(:checked) ~ .menuEffects ul {
   transform: translateY(-30%);
 }
+
