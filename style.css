@@ -48,6 +48,9 @@ body{
   0 64px 117px -34px rgba(0, 0, 0, 0.54);
 }
 
+.bio a {
+  margin-left: 25px;
+}
 
 body > * {
   background: white;
@@ -107,9 +110,15 @@ header{
   justify-content: space-around;
 }
 
+.item-desc{
+  padding: 10px;
+}
+
 .portfolio-item{
   width: 375px;
   margin: 0px 15px 20px 15px;
+  background: rgb(214, 214, 214);
+  padding: 15px 10px;
 }
 .item-header{
   display: flex; 
